@@ -1,0 +1,378 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+body {
+    background-color: black;
+    overflow-x:clip;
+}
+
+.horizontal-line {
+    height: 8px;
+    background-color: rgb(59, 59, 59);
+}
+
+.first-page {
+    height: 90vh;
+    background-image: url("Images/login-background.jpg");
+    background-position: center center;
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+.nav {
+    width: 80vw;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-buttons {
+    display: flex;
+}
+
+.nav-buttons button {
+    font-size: 16px;
+    padding: 8px 16px;
+    border-radius: 6px;
+    z-index: 5;
+}
+
+.background-black {
+    height: 90vh;
+    width: 100vw;
+    top: 0px;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.nav img {
+    z-index: 5;
+}
+
+.button2 {
+    background-color: rgb(229, 9, 20);
+    outline: none;
+    color: white;
+    border: 0.5px solid grey;
+    margin-left: 20px;
+}
+
+.button1 {
+    color: white;
+    border: 1px solid grey;
+    background-color: rgba(0, 0, 0, 0.502);
+}
+
+.first-line {
+    font-size: 48px;
+    color: white;
+    font-weight: 900;
+    z-index: 5;
+}
+
+.first-page-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.second-line {
+    font-size: 24px;
+    color: white;
+    z-index: 5;
+    margin-top: 16px;
+}
+
+.third-line {
+    font-size: 20px;
+    color: white;
+    z-index: 5;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.fourth-line {
+    display: flex;
+    z-index: 5;
+    justify-content: center;
+    align-items: center;
+}
+
+.fourth-line input {
+    font-size: 16px;
+    padding: 14px 18px;
+    padding-right: 150px;
+    background-color: rgba(0, 0, 0, 0.3);
+    outline: none;
+    border: 1px solid grey;
+    border-radius: 5px;
+    margin-right: 10px;
+    z-index: 5;
+}
+
+.first-page-content {
+    text-align: center;
+    margin-top: 10%;
+}
+
+.fourth-line button {
+    font-size: 20px;
+    padding: 12px 18px;
+    outline: none;
+    border: 1px solid grey;
+    border-radius: 5px;
+    background-color: rgb(229, 9, 20);
+    color: white;
+    font-weight: 500;
+}
+
+.second-page-first-line,
+.third-page-first-line,
+.fourth-page-first-line,
+.fifth-page-first-line {
+    font-size: 48px;
+    font-weight: 900;
+    margin-bottom: 16px;
+}
+
+.second-page-second-line,
+.second-page-second-line,
+.third-page-second-line,
+.fourth-page-second-line,
+.fifth-page-second-line {
+    font-size: 24px;
+}
+
+.second-page,
+.third-page,
+.fourth-page,
+.fifth-page {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 72px;
+    position: relative;
+    justify-content: space-evenly;
+
+}
+
+.second-page-content,
+.third-page-content,
+.fourth-page-content,
+.fifth-page-content {
+    width: 50%;
+}
+
+.second-page-img,
+.third-page-img,
+.fourth-page-img,
+.fifth-page-img {
+    width: 45%;
+}
+
+
+
+
+h1 {
+    font-size: 48px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.sixth-page-box {
+    font-size: 24px;
+    width: 80%;
+    margin: auto;
+    background-color: rgb(53, 52, 52);
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 30px;
+    transition: all 0.5s ease-in-out;
+}
+
+
+
+.sixth-page {
+    padding: 30px;
+    padding-top: 80px;
+    padding-bottom: 0px;
+    margin-bottom: 60px;
+}
+
+.sixth-page-footer-content {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.seventh-page {
+    width: 90vw;
+    padding: 80px 10px;
+    padding-left: 30px;
+}
+
+.grid {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 20px;
+    column-gap: 10px;
+    margin: 30px 0px;
+    font-size: 14px;
+}
+
+.seventh-page a,
+.seventh-page p {
+    color: rgb(162, 158, 158);
+}
+
+.netflix-india {
+    margin-top: 20px;
+}
+
+@media(max-width:960px) {
+    .grid {
+        grid-template-rows: repeat(8, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .seventh-page {
+        padding-left: 20px;
+    }
+
+    .first-line,
+    .second-page-first-line,
+    .third-page-first-line,
+    .fourth-page-first-line,
+    .fifth-page-first-line,
+    h1 {
+        font-size: 32px;
+    }
+
+    .first-page {
+        height: auto;
+    }
+
+    .second-line,
+    .third-line,
+    .second-page-second-line,
+    .third-page-second-line,
+    .fourth-page-second-line,
+    .fifth-page-second-line {
+        font-size: 20px;
+    }
+
+    .second-page,
+    .third-page,
+    .fourth-page,
+    .fifth-page {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .second-page-content,
+    .third-page-content,
+    .fourth-page-content,
+    .fifth-page-content {
+        width: 100%;
+        text-align: center;
+    }
+
+    .second-page-img,
+    .third-page-img,
+    .fourth-page-img,
+    .fifth-page-img {
+        width: 100%;
+    }
+
+    .fourth-line {
+        margin-bottom: 30px;
+    }
+
+    .sixth-page-box {
+        font-size: 20px;
+    }
+}
+
+@media(max-width:600px) {
+
+    .fourth-line {
+        flex-direction: column;
+    }
+
+    .fourth-line input {
+        width: 80vw;
+        padding-right: 0;
+        margin-bottom: 15px;
+    }
+
+    .fourth-line button {
+        margin-bottom: 20px;
+        font-size: 16px;
+    }
+
+    .nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .first-page-content {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .background-black {
+        height: 150vh;
+    }
+
+    .second-page-img,
+    .third-page-img,
+    .fourth-page-img,
+    .fifth-page-img {
+        width: 110%;
+    }
+
+    .second-page,
+    .third-page,
+    .fourth-page,
+    .fifth-page {
+        padding: 40px 20px;
+    }
+
+    .second-page-content,
+    .fourth-page-content {
+        margin-bottom: 40px;
+    }
+
+    .third-page-img,
+    .fifth-page-img {
+        margin-bottom: 40px;
+    }
+
+}
+
+.seventh-page .question {
+    display: inline;
+}
+
+@media(max-width:324px) {
+    .seventh-page .question {
+        display: block;
+    }
+}
+
+.sixth-page-box:hover {
+    cursor: pointer;
+    background-color: rgb(81, 80, 80)
+}
+
+button:hover {
+    cursor: pointer;
+}
