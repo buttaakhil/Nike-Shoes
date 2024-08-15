@@ -110,6 +110,7 @@ body{
 
 .shoe-images{
     z-index: 2;
+    overflow-x:clip;
 }
 
 .shoe-images{
